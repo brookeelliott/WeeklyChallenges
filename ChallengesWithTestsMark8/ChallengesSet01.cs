@@ -60,7 +60,7 @@ namespace ChallengesWithTestsMark8
 
         public string GetHey()
         {
-            string greeting = "Hey!";
+            string greeting = "HEY!";
             return greeting;
         }
     }
