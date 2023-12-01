@@ -128,9 +128,5 @@ namespace ChallengesWithTestsMark8
             return;
         }
 
-        //public void ChangeAllElementsToUppercase(string[] values)
-        //{
-         //   throw new NotImplementedException();
-        //}
     }
 }
