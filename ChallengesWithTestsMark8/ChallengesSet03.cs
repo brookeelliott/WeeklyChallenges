@@ -21,13 +21,15 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            int counter = 0;
-            int listSize = numbers.Count();
-            if (listSize == 0)
+            if (numbers == null)
             {
                 return false;
             }
-            if (numbers == null)
+
+            int counter = 0;
+            int listSize = numbers.Count();
+
+            if (listSize == 0)
             {
                 return false;
             }
@@ -36,7 +38,7 @@ namespace ChallengesWithTestsMark8
             {
                 if (i % 2 != 0)
                 {
-                    counter = counter + i;
+                    counter += i;
                 }
             }
 
@@ -116,18 +118,19 @@ namespace ChallengesWithTestsMark8
             return numbers.ToArray();
         }
 
-        public void ChangeAllElementsToUppercase1(string[] words)
+        public void ChangeAllElementsToUppercase(string[] words)
         {
-
+            
             for (int i = 0; i < words.Length; i++)
             {
                 words[i] = words[i].ToUpper();
             }
+            return;
         }
 
-        public void ChangeAllElementsToUppercase(string[] values)
-        {
-            throw new NotImplementedException();
-        }
+        //public void ChangeAllElementsToUppercase(string[] values)
+        //{
+         //   throw new NotImplementedException();
+        //}
     }
 }
